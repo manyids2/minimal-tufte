@@ -1,0 +1,14 @@
+name = 'minimal-tufte'
+license = 'MIT'
+licenselink = 'https://github.com/manyids2/minimal-tufte/LICENSE'
+description = 'Minimal theme based on tufte-css'
+
+homepage = 'https://github.com/manyids2/minimal-tufte'
+# demosite = 'https://manyids2.github.io/minimal-tufte'
+
+tags = ['blog', 'minimal']
+features = ['navbar', 'toc', 'tree']
+
+[author]
+name = 'manyids2'
+homepage = 'https://manyids2.nl'

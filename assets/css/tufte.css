@@ -74,47 +74,49 @@ article {
 }
 
 .aside-container > h1 {
+  z-index: 100;
   flex-grow: 1;
   position: relative;
 }
 
 aside {
-  z-index:100;
+  z-index: 100;
   position: absolute;
-  background-color: #fffff8;
   top: 5rem;
   right: 1rem;
   width: 25%;
+  background-color: #fffff8;
 }
 
-details > summary {
+aside > details {
+  z-index: 100;
+  margin-top: 0;
+  margin-left: 0.5%;
+  border-radius: 1rem;
+  border: 0.25rem solid #f8f8f8;
+}
+
+aside > details > summary {
   list-style-type: "";
 }
 
 summary {
   cursor: pointer;
-  padding: 0.5rem;
+  margin-left: 1rem;
   border: none;
   border-radius: 1rem;
   font-family: Jost;
   font-weight: 600;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-aside > details {
-  margin-top: 0;
-  margin-left: 0.5%;
-  border: 1px solid #dddddd;
-  border-radius: 0 0 5px 5px;
+  font-size: 1.8rem;
 }
 
 #TableOfContents {
-  margin-left: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 #TableOfContents li {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 #TableOfContents a {
@@ -127,6 +129,13 @@ aside > details {
   body {
     background-color: #151515;
     color: #ddd;
+  }
+  aside {
+    background-color: #151515;
+    color: #ddd;
+  }
+  aside > details {
+    border: 0.25rem solid #252525;
   }
 }
 
@@ -207,23 +216,19 @@ p {
 ul {
   list-style-type: none;
   padding-left: 0;
+  margin-top: 0;
 }
 
 /* Style for list items at deeper levels */
-ul li {
+ul > li {
   position: relative;
-  padding-left: 1rem; /* Adjust this value as needed */
+  padding-left: 0rem; /* Adjust this value as needed */
 }
 
-/* Adding line for indentation */
-ul li:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0; /* Adjust this value to align the lines */
-  height: 100%;
-  border-left: 0.25rem solid #f8f8f8; /* Adjust line style as needed */
-  border-radius: 10rem;
+/* Style for list items at deeper levels */
+ul ul > li {
+  position: relative;
+  padding-left: 1rem; /* Adjust this value as needed */
 }
 
 /* Style for the text inside list items */
@@ -583,6 +588,10 @@ label.margin-toggle:not(.sidenote-number) {
     width: 100%;
   }
 
+  aside > details {
+    position: relative;
+  }
+
   article {
     width: 84%;
     padding-left: 8%;
@@ -659,4 +668,17 @@ label.margin-toggle:not(.sidenote-number) {
   img {
     width: 100%;
   }
+}
+
+.center {
+  width: 100%;
+  text-align: center;
+}
+
+.jost {
+  font-family: Jost;
+}
+
+.bold {
+  font-weight: 800;
 }

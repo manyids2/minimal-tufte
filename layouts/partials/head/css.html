@@ -1,3 +1,90 @@
+
+<style>
+/* Import ET Book styles
+   adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
+
+@font-face {
+    font-family: "et-book";
+    {{- with resources.Get "tufte-css/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot" }}
+    src: url("{{ .RelPermalink }}");
+    src: url("{{ .RelPermalink }}?#iefix") format("embedded-opentype"),
+    {{- end}}
+    {{- with resources.Get "tufte-css/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff" }}
+         url("{{ .RelPermalink }}") format("woff"),
+    {{- end}}
+    {{- with resources.Get "tufte-css/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf" }}
+         url("{{ .RelPermalink }}") format("truetype"),
+    {{- end}}
+    {{- with resources.Get "tufte-css/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg" }}
+         url("{{ .RelPermalink }}") format("svg");
+    {{- end}}
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "et-book";
+    {{- with resources.Get "tufte-css/et-book/et-book-italic-old-style-figures/et-book-italic-old-style-figures.eot" }}
+    src: url("{{ .RelPermalink }}");
+    src: url("{{ .RelPermalink }}?#iefix") format("embedded-opentype"),
+    {{- end}}
+    {{- with resources.Get "tufte-css/et-book/et-book-italic-old-style-figures/et-book-italic-old-style-figures.woff" }}
+         url("{{ .RelPermalink }}") format("woff"),
+    {{- end}}
+    {{- with resources.Get "tufte-css/et-book/et-book-italic-old-style-figures/et-book-italic-old-style-figures.ttf" }}
+         url("{{ .RelPermalink }}") format("truetype"),
+    {{- end}}
+    {{- with resources.Get "tufte-css/et-book/et-book-italic-old-style-figures/et-book-italic-old-style-figures.svg" }}
+         url("{{ .RelPermalink }}") format("svg");
+    {{- end}}
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "et-book";
+    {{- with resources.Get "tufte-css/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot" }}
+    src: url("{{ .RelPermalink }}");
+    src: url("{{ .RelPermalink }}?#iefix") format("embedded-opentype"),
+    {{- end}}
+    {{- with resources.Get "tufte-css/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff" }}
+         url("{{ .RelPermalink }}") format("woff"),
+    {{- end}}
+    {{- with resources.Get "tufte-css/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf" }}
+         url("{{ .RelPermalink }}") format("truetype"),
+    {{- end}}
+    {{- with resources.Get "tufte-css/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg" }}
+         url("{{ .RelPermalink }}") format("svg");
+    {{- end}}
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "et-book-roman-old-style";
+    {{- with resources.Get "tufte-css/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot" }}
+    src: url("{{ .RelPermalink }}");
+    src: url("{{ .RelPermalink }}?#iefix") format("embedded-opentype"),
+    {{- end}}
+    {{- with resources.Get "tufte-css/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff" }}
+         url("{{ .RelPermalink }}") format("woff"),
+    {{- end}}
+    {{- with resources.Get "tufte-css/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf" }}
+         url("{{ .RelPermalink }}") format("truetype"),
+    {{- end}}
+    {{- with resources.Get "tufte-css/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg" }}
+         url("{{ .RelPermalink }}") format("svg");
+    {{- end}}
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+</style>
+
 {{- with resources.Get "tufte-css/tufte.css" }}
   {{- if eq hugo.Environment "development" }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
@@ -17,3 +104,7 @@
     {{- end }}
   {{- end }}
 {{- end }}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">

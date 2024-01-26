@@ -1,0 +1,13 @@
+<figure class="{{ .Get "class" }}">
+  <label for="mn-{{ .Get "label" }}" class="margin-toggle">⊕</label
+  ><input type="checkbox" id="mn-{{ .Get "label" }}" class="margin-toggle" />
+
+  <span class="marginnote">
+    {{ .Inner }}
+  </span>
+
+  <img
+      src={{ .Get "src" }}
+      alt={{ .Get "alt" }}
+  />
+</figure>

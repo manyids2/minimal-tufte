@@ -7,6 +7,9 @@ Hugo theme with [tufte-css](https://github.com/edwardtufte/tufte-css.git).
 
 ### Navbar
 
+Responsive navbar.
+
+### Table of contents
 
 
 ### Shortcodes

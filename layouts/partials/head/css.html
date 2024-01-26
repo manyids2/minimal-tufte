@@ -85,7 +85,7 @@
 
 </style>
 
-{{- with resources.Get "tufte-css/tufte.css" }}
+{{- with resources.Get "css/tufte.css" }}
   {{- if eq hugo.Environment "development" }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{- else }}

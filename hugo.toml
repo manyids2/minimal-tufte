@@ -43,3 +43,9 @@ min = "0.116.0"
 [markup.goldmark.renderer]
 unsafe = true
 
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+

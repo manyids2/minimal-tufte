@@ -2,7 +2,7 @@
   <script src="{{ .RelPermalink }}"></script>
 {{- end }}
 
-{{- with resources.Get "js/script.js" }}
+{{- with resources.Get "js/main.js" }}
   {{- if eq hugo.Environment "development" }}
     {{- with . | js.Build }}
       <script src="{{ .RelPermalink }}"></script>

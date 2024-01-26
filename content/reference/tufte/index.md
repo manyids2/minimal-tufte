@@ -5,8 +5,6 @@ draft: false
 ---
 <section>
 
-# Tufte CSS
-
 {{< subtitle "Dave Liepman" >}}
 
 Tufte CSS provides tools to style web articles using the ideas

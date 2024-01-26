@@ -1,5 +1,9 @@
 ---
-title: 'Reference'
-date: 2024-01-25T18:15:46+01:00
-draft: true
+title: "Reference markdowns"
+date: 2023-01-01T08:00:00-07:00
+draft: false
 ---
+
+# Reference
+
+Study of different markdown styles.

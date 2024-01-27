@@ -184,8 +184,9 @@ summary {
 
 /* Headers */
 h1 {
-  font-weight: var(--font-regular);
-  margin-top: 3.2rem;
+  font-family: Jost;
+  font-weight: var(--font-heavy);
+  margin-top: 4rem;
   margin-bottom: 1.5rem;
   font-size: 3.2rem;
   line-height: 1;

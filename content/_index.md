@@ -16,6 +16,16 @@ Screenshot of this theme.
 
 {{< /example >}}
 
+Font download sizes are too large, but makes a massive difference:
+
+{{< figure label="load-sizes"
+src="/sizes.png"
+alt="Sizes of resources loaded on homepage" >}}
+Sizes of resources loaded on homepage
+{{< /figure >}}
+
+Approx: {{< latex >}} 25 * 6 (fonts) + 15 (tufte-css) + 5 (syntax-css) = 170KB. {{< /latex >}}
+
 <hr>
 
 ## Features

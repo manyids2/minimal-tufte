@@ -4,6 +4,9 @@ Hugo theme with [tufte-css](https://github.com/edwardtufte/tufte-css.git).
 
 ![screenshot](./static/screenshot.png)
 
+Load sizes ( font is too large ):
+![screenshot](./static/sizes.png)
+
 ## Features
 
 ### Navbar

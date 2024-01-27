@@ -1,12 +1,21 @@
 {{ define "main" }}
-  <h1 class="center jost bold"> {{.Title}} </h1>
-  <div class="table-of-contents">
-    <h2 class="center jost"> Contents </h2>
-    <ul class="center">
-    {{ range .Pages }}
-      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-    {{ end }}
-    </ul>
+<section class="aside-container">
+  <div class="vertical-container">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{.Title}}</h1>
   </div>
-  {{ .Content }}
-{{ end }}
+  <aside id="sidebar">
+    <details id="sidebar-details" open>
+      <summary>Contents</summary>
+      <div id="TableOfContents">
+        <ul>
+          {{ range .Pages }}
+          <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </details>
+  </aside>
+</section>
+{{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }} {{
+end }}

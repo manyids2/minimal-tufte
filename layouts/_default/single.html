@@ -1,13 +1,15 @@
 {{ define "main" }}
-  <section class="aside-container">
-    <h1> {{.Title}} </h1>
-    <aside id="sidebar">
-      <details id="sidebar-details" open>
-        <summary>Contents</summary>
-        {{ .TableOfContents }}
-      </details>
-    </aside>
-  </section>
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-{{ end }}
+<section class="aside-container">
+  <div class="vertical-container">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{.Title}}</h1>
+  </div>
+  <aside id="sidebar">
+    <details id="sidebar-details" open>
+      <summary>Contents</summary>
+      {{ .TableOfContents }}
+    </details>
+  </aside>
+</section>
+{{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }} {{
+end }}

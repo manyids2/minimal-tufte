@@ -91,6 +91,24 @@ article {
   counter-reset: sidenote-counter;
 }
 
+/* Breadcrumbs */
+.breadcrumbs {
+  border-bottom: 0.25rem solid var(--color-muted-background);
+  padding-right: 1rem;
+  width: max-content;
+}
+
+.breadcrumb {
+  font-family: Jost;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.breadcrumb-spacer {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
 /* Table of contents */
 .aside-container {
   width: 87.5%;
@@ -106,7 +124,7 @@ article {
 aside {
   z-index: 100;
   position: absolute;
-  top: 5rem;
+  top: 6rem;
   right: 1rem;
   width: 25%;
   background-color: var(--color-background);
@@ -145,6 +163,7 @@ summary {
 }
 
 #TableOfContents li {
+  font-family: Jost;
   font-size: 1.2rem;
 }
 
@@ -165,7 +184,7 @@ summary {
 /* Headers */
 h1 {
   font-weight: var(--font-regular);
-  margin-top: 4rem;
+  margin-top: 3.2rem;
   margin-bottom: 1.5rem;
   font-size: 3.2rem;
   line-height: 1;
@@ -677,7 +696,6 @@ label.margin-toggle:not(.sidenote-number) {
     clear: both;
     width: 95%;
     margin: 1rem 2.5%;
-    vertical-align: baseline;
     position: relative;
   }
 

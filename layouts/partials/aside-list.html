@@ -1,0 +1,12 @@
+<aside id="sidebar">
+  <details id="sidebar-details" open>
+    <summary>Contents</summary>
+    <div id="TableOfContents">
+      <ul>
+        {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+  </details>
+</aside>

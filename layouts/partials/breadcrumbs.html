@@ -1,0 +1,5 @@
+<div class="breadcrumbs horizontal-container">
+  {{- range after 1 .Ancestors.Reverse }}
+  <div class="breadcrumb"><a class="no-tufte-underline" href="{{ .RelPermalink }}">{{ .Title }}</a> </div> <div class="breadcrumb-spacer"> » </div>
+  {{- end }}
+</div>

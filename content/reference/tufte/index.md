@@ -15,7 +15,7 @@ of graphics with text, and carefully chosen typography.
 
 Tufte CSS was created by [Dave Liepmann](http://www.daveliepmann.com)
 and is now an Edward Tufte project. The original idea was cribbed from
-[Tufte-{{< latex >}} L{{< latex-sup "a" >}}T{{< latex-sub "e" >}}X {{< /latex >}}](https://tufte-latex.github.io/tufte-latex/)
+[Tufte-{{< latex >}} L{{< latex-sup >}}a{{< /latex-sup >}}T{{< latex-sub >}}e{{< /latex-sub >}}X {{< /latex >}}](https://tufte-latex.github.io/tufte-latex/)
 and [R Markdown's Tufte Handout
 format](http://rmarkdown.rstudio.com/tufte_handout_format.html). We give
 hearty thanks to all the people who have contributed to those projects.

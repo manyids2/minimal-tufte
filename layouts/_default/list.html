@@ -1,11 +1,12 @@
 {{ define "main" }}
   <h1 class="center jost bold"> {{.Title}} </h1>
-  {{ .Content }}
-  <div class="table-of-contents">
+  <div class="table-of-contents example">
+    <h2 class="center jost"> Contents </h2>
     <ul>
     {{ range .Pages }}
       <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
     {{ end }}
     </ul>
   </div>
+  {{ .Content }}
 {{ end }}

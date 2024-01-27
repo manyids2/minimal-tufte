@@ -7,30 +7,92 @@ Hugo theme with [tufte-css](https://github.com/edwardtufte/tufte-css.git).
 
 ### Navbar
 
-Responsive navbar.
+- responsive navbar
 
 ### Table of contents
+
+- right top
 
 
 ### Shortcodes
 
-- figure
-- footer
-- iframe
-- latex
-- latex-sub
-- latex-sup
-- marginnote
-- marginnote-label
-- newthought
-- sidenote
-- sidenote-label
 - subtitle
+- newthought
+- sidenote, sidenote-label
+- marginnote, marginnote-label
+- latex, latex-sub, latex-sup
+- figure
+- iframe
+- footer
 
 ### Nested structures
 
+- list pages have links to children by default.
 
 
 ## Installation
+
+If from start,
+
+```bash
+hugo new site my-site
+cd my-site
+```
+
+Add theme.
+
+```bash
+# Use submodules
+git submodule add https://github.com/manyids2/minimal-tufte themes/minimal-tufte
+
+# Or clone and remove git to fully customize if submodules are tedious
+# git clone https://github.com/manyids2/minimal-tufte themes/minimal-tufte
+# rm -rf themes/minimal-tufte/.git
+
+# Set theme in hugo
+echo "theme = 'minimal-tufte'" >> hugo.toml
+
+# Ignore theme
+echo "themes/minimal-tufte" >> .gitignore
+
+# Yaml headers
+echo "---
+title: '{{ replace .File.ContentBaseName "-" " " | title }}'
+date: {{ .Date }}
+draft: true
+---
+" > archetypes/default.md
+
+# Remove demo content from themes
+rm -r themes/minimal-tufte/content/*
+
+# Create various subfolders ( default: projects, software, reference )
+hugo new content projects/_index.md
+hugo new content software/_index.md
+hugo new content reference/_index.md
+
+# Set the corresponding options in hugo.toml
+# $EDITOR hugo.toml # Manually edit
+
+# Populate and then edit ( lower the weight, lefter it is )
+
+# Main -> links on left
+echo "[[menus.main]]
+name = 'Projects'
+url = '/projects'
+weight = 10
+">>hugo.toml
+
+# Social -> links on right with pre
+echo "[[menus.social]]
+name = "Music"
+pre = '🎶'
+url = "https://manyids2.bandcamp.com/track/high-tide"
+weight = 30
+">>hugo.toml
+
+# Serve and check
+hugo server -D
+```
 
 ## Configuration

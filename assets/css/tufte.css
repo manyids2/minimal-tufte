@@ -28,6 +28,7 @@ body > nav {
 
 .nav-title {
   font-weight: 800;
+  margin-left: 1rem;
   margin-right: 1rem;
 }
 
@@ -124,6 +125,14 @@ summary {
   text-shadow: unset;
 }
 
+.example {
+  border: 1px solid #f8f8f8;
+  border-radius: 0.25rem;
+  width: 45%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
 /* Adds dark mode */
 @media (prefers-color-scheme: dark) {
   body {
@@ -136,6 +145,9 @@ summary {
   }
   aside > details {
     border: 0.25rem solid #252525;
+  }
+  .example {
+    border: 1px solid #252525;
   }
 }
 

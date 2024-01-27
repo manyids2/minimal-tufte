@@ -4,8 +4,6 @@ date: 2024-01-27T20:01:21+01:00
 draft: true
 ---
 
-<section>
-
 <div class="danger bold">
 I dont understand the copy code yet, so for some reason inserts newlines
 everywhere while copying. Need to properly add the feature.
@@ -14,8 +12,6 @@ everywhere while copying. Need to properly add the feature.
 Examples of code
 
 <hr>
-</section>
-<section>
 
 ## Basic
 
@@ -24,8 +20,6 @@ ls -R /
 ```
 
 <hr>
-</section>
-<section>
 
 ## Specify language for chroma highlights
 
@@ -38,8 +32,6 @@ ls -R /
 ```
 
 <hr>
-</section>
-<section>
 
 ## Long line
 
@@ -50,8 +42,6 @@ ls -R / | xargs -I{} echo {} | xargs -I{} echo {} | xargs -I{} echo {} | xargs -
 ```
 
 <hr>
-</section>
-<section>
 
 ## Few lines
 
@@ -65,8 +55,6 @@ ls -R / | \
 ```
 
 <hr>
-</section>
-<section>
 
 ## Many lines
 
@@ -132,5 +120,3 @@ int main(int argc, char **argv) {
 ```
 
 <hr>
-</section>
-<section>

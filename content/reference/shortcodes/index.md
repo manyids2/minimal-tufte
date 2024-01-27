@@ -6,8 +6,6 @@ tags: ["shortcodes"]
 categories: ["reference", "shortcodes"]
 ---
 
-<section>
-
 <hr>
 
 ## subtitle
@@ -34,9 +32,6 @@ Parameters:
 
 <hr>
 
-</section>
-<section>
-
 ## newthought
 
 Code:
@@ -61,9 +56,6 @@ Parameters:
 | font | jost \| et-book (default) | Font of newthought |
 
 <hr>
-
-</section>
-<section>
 
 ## sidenote, sidenode-label
 
@@ -94,9 +86,6 @@ Parameters:
 
 <hr>
 
-</section>
-<section>
-
 ## marginnote, marginnote-label
 
 Code:
@@ -125,9 +114,6 @@ Parameters:
 | label | id of sidenote | necessary to align the sidenote |
 
 <hr>
-
-</section>
-<section>
 
 ## figure
 
@@ -191,9 +177,6 @@ Parameters:
 
 <hr>
 
-</section>
-<section>
-
 ## latex, latex-sub, latex-sup
 
 Code:
@@ -215,9 +198,6 @@ Example:
 </p></div>
 
 <hr>
-
-</section>
-<section>
 
 ## iframe
 
@@ -243,9 +223,6 @@ Parameters:
 
 <hr>
 
-</section>
-<section>
-
 ## footer
 
 Code:
@@ -264,9 +241,6 @@ Example:
 
 <hr>
 
-</section>
-<section>
-
 ## example
 
 Code:
@@ -284,5 +258,3 @@ Example:
 </div>
 
 <hr>
-
-</section>

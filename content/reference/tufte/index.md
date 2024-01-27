@@ -3,7 +3,6 @@ title: "Tufte CSS"
 date: 2023-01-01T08:00:00-07:00
 draft: false
 ---
-<section>
 
 {{< subtitle "Dave Liepman" >}}
 
@@ -36,9 +35,6 @@ particular set of ideas. It should be a starting point, not a design
 goal, because any project should present their information as best suits
 their particular circumstances.
 
-</section>
-
-<section>
 
 ## Getting Started
 
@@ -52,9 +48,6 @@ Now you just have to use the provided CSS rules, and the Tufte CSS
 conventions described in this document. For best results, View Source
 and Inspect Element frequently.
 
-</section>
-
-<section>
 
 ## Fundamentals
 
@@ -152,9 +145,6 @@ provides by default. Other approaches can also be made to work. The goal
 is to make sentences readable without interference from links, as well
 as to make links immediately identifiable even by casual web users.
 
-</section>
-
-<section>
 
 ## Epigraphs
 
@@ -187,9 +177,6 @@ and longer quotes, with and without a paragraph tag, and showing how
 multiple quotes within an epigraph fit together with the use of a
 wrapper class.
 
-</section>
-
-<section>
 
 ## Sidenotes: Footnotes and Marginal Notes {#sidenotes}
 
@@ -263,9 +250,6 @@ in the previous paragraph:
 Figures in the margin are created as margin notes, as demonstrated in
 the next section.
 
-</section>
-
-<section>
 
 ## Figures
 
@@ -330,9 +314,6 @@ You can use this class on a `div` instead of a `figure`, with slightly
 different results but the same general effect. Experiment and choose
 depending on your application.
 
-</section>
-
-<section>
 
 ## Code
 
@@ -365,9 +346,6 @@ element. This adds control over indentation and overflow as well:
     ;; If this proselytizing has worked, check out:
     ;; http://howistart.org/posts/clojure/1
 
-</section>
-
-<section>
 
 ## ImageQuilts
 
@@ -393,9 +371,6 @@ the image itself is of course still rectangular.
 src="img/imagequilt-animal-sounds.png" 
 alt="Image of animal sounds" >}} {{< /figure >}}
 
-</section>
-
-<section>
 
 ## Epilogue
 
@@ -403,4 +378,3 @@ Many thanks go to Edward Tufte for leading the way with his work. It is
 only through his kind and careful editing that this project accomplishes
 what it does. All errors of implementation are of course mine.
 
-</section>

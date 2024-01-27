@@ -98,25 +98,14 @@ hugo server -D
 
 ## Todos
 
-1. Code blocks are ugly, dont support light, dark mode
-
-[example](https://discourse.gohugo.io/t/documentation-for-code-block-render-hooks/37610/2)
-
-```go
-{{ $class := .Attributes.class | default ""    }}
-{{ $lang  := .Attributes.lang  | default .Type }}
-{{ if transform.CanHighlight $lang }}
-<div class="{{ $class }}">{{ highlight .Inner $lang }}</div>
-{{else}}
-<pre><code class="{{ $class }}">{{.Inner}}</code></pre>
-{{end}}
-```
-
-2. Decide how to show table of contents, current is ugly
-3. Option to show custom table of contents if it is there
-4. Navbar design can be cleaned up
-5. Render entire thing as grid rather than use margin-auto
-6. Extract sass from `tufte.css`
+- [x] Code blocks are ugly, dont support light, dark mode
+- [ ] Code blocks dont support copy
+- [ ] Decide how to show table of contents, current is ugly
+- [ ] Option to show custom table of contents if it is there
+- [ ] Navbar design can be cleaned up
+- [ ] Render entire thing as grid rather than use margin-auto
+- [ ] Extract sass from `tufte.css`
+- [ ] Iterate over sections instead of `.Content` somehow to manage `<section>`
 
 ## Sources
 

@@ -6,7 +6,6 @@ Hugo theme with [tufte-css](https://github.com/edwardtufte/tufte-css.git).
 
 ## Features
 
-
 ### Navbar
 
 - responsive navbar
@@ -14,7 +13,6 @@ Hugo theme with [tufte-css](https://github.com/edwardtufte/tufte-css.git).
 ### Table of contents
 
 - right top
-
 
 ### Shortcodes
 
@@ -30,7 +28,6 @@ Hugo theme with [tufte-css](https://github.com/edwardtufte/tufte-css.git).
 ### Nested structures
 
 - list pages have links to children by default.
-
 
 ## Installation
 
@@ -120,3 +117,8 @@ hugo server -D
 4. Navbar design can be cleaned up
 5. Render entire thing as grid rather than use margin-auto
 6. Extract sass from `tufte.css`
+
+## Sources
+
+1. [Dark mode javascript](https://ultimatecourses.com/blog/detecting-dark-mode-in-javascript)
+2. [Adaptive highlight for hugo](https://data-dive.com/adaptive-syntax-highlighting-for-hugo-blog-dark-mode/)

@@ -108,3 +108,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
+
+
+{{ $syntax_dark_css := resources.Get "css/syntax_dark.css" | minify }}
+{{ $syntax_light_css := resources.Get "css/syntax_light.css" | minify }}
+
+<link rel="preload stylesheet" as="style" href="{{ $syntax_dark_css.Permalink }}" />
+<link rel="preload stylesheet" as="style" href="{{ $syntax_light_css.Permalink }}" />

@@ -14,7 +14,7 @@ categories: ["reference", "shortcodes"]
 
 Code:
 
-```
+```go
 {{</* subtitle "Subtitle" */>}}
 
 // <p class="subtitle">{{ .Get 0 }}</p>
@@ -41,7 +41,7 @@ Parameters:
 
 Code:
 
-```
+```go
 {{</* newthought */>}}As I was saying,{{</* /newthought */>}}
 this is a newthought.
 
@@ -69,7 +69,7 @@ Parameters:
 
 Code:
 
-```
+```go
 In his later notes{{</* sidenote-label in-his-later */>}},
 // <label for="sn-{{ .Get 0 }}" class="margin-toggle sidenote-number"></label>
 
@@ -101,7 +101,7 @@ Parameters:
 
 Code:
 
-```
+```go
 This is the anchor{{</* margin-label in-his-later */>}}.
 // <label for="mn-{{ .Get 0 }}" class="margin-toggle"></label>
 
@@ -135,7 +135,7 @@ Parameters:
 
 Code:
 
-```
+```go
 {{</* figure label="exports"
 src="img/exports-imports.png"
 alt="Exports and Imports to and from Denmark &amp; Norway from 1700 to 1780" */>}}
@@ -161,7 +161,7 @@ From Edward Tufte, <em>Visual Display of Quantitative Information</em>, page 92.
 
 ### fullwidth
 
-```
+```go
 {{</* figure label="napoleons-march"
 class="fullwidth"
 src="img/napoleons-march.png"
@@ -200,7 +200,7 @@ Code:
 
 Uses `{{- "" -}}` to terminate without newline.
 
-```
+```go
 {{< latex >}} L{{< latex-sup >}}a{{< /latex-sup >}}T{{< latex-sub >}}e{{< /latex-sub >}}X {{< /latex >}}
 
 // <span class="latex">{{ .Inner | markdownify }}</span>{{- "" -}}
@@ -223,7 +223,7 @@ Example:
 
 Code:
 
-```
+```go
 {{</* subtitle "Subtitle" */>}}
 
 // <p class="subtitle">{{ .Get 0 }}</p>
@@ -250,7 +250,7 @@ Parameters:
 
 Code:
 
-```
+```go
 {{</* footer */>}}footer{{</* /footer */>}}
 
 // <footer>footer</footer>
@@ -265,12 +265,13 @@ Example:
 <hr>
 
 </section>
+<section>
 
 ## example
 
 Code:
 
-```
+```go
 {{</* example */>}}example{{</* /example */>}}
 
 // <div class="example">example</div>

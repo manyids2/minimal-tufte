@@ -338,6 +338,7 @@ blockquote footer {
 }
 
 /* Children of section */
+section > div,
 section > p,
 section > footer,
 section > table {
@@ -532,6 +533,14 @@ div.table-wrapper {
   letter-spacing: 0.03em;
 }
 
+span.line {
+  flex-grow: 1;
+}
+
+.highlight > pre > code {
+  width: 95%;
+}
+
 code,
 pre > code {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -712,3 +721,81 @@ label.margin-toggle:not(.sidenote-number) {
     width: 100%;
   }
 }
+
+/* copy */
+.highlight-wrapper {
+  display: block;
+}
+
+.highlight {
+  position: relative;
+  z-index: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: .25rem;
+}
+
+.highlight > .chroma {
+  color: #d0d0d0;
+  background-color: #212121;
+  position: static;
+  z-index: 1;
+  border-radius: .25rem;
+  padding: 1rem;
+}
+
+.chroma {
+  overflow: auto;
+}
+
+.chroma .lntable {
+  display: table;
+  width: 100%;
+  padding: 0 0 .25rem;
+  margin: 0;
+  border-spacing: 0;
+  border: 0;
+  overflow: auto;
+}
+
+.chroma .lntd:first-child {
+  padding: .25rem .25rem .25rem .3rem;
+  margin: 0;
+}
+
+.chroma .lntd:last-child {
+  padding: .25rem .3rem .25rem .25rem;
+  margin: 0;
+}
+
+.copy-code-button {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  width: 4rem;
+  color: var(--color-foreground);
+  background-color: var(--color-muted-background);
+  padding: 0;
+  margin-top: -1rem;
+  border: 0;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.copy-code-button:hover,
+.copy-code-button:focus,
+.copy-code-button:active,
+.copy-code-button:active:hover {
+  color: #222225;
+  background-color: #b3b3b3;
+  opacity: 0.8;
+}
+
+.copyable-text-area {
+  position: absolute;
+  height: 0;
+  z-index: -1;
+  opacity: 0.01;
+}
+

@@ -1,3 +1,4 @@
 .hugo_build.lock
 .envrc
 .nvim.lua
+public

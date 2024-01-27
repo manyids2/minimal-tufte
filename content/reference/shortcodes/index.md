@@ -2,6 +2,8 @@
 title: "Shortcodes"
 date: 2024-01-27T00:06:30+01:00
 draft: true
+tags: ["shortcodes"]
+categories: ["reference", "shortcodes"]
 ---
 
 <section>

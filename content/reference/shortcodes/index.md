@@ -265,3 +265,23 @@ Example:
 <hr>
 
 </section>
+
+## example
+
+Code:
+
+```
+{{</* example */>}}example{{</* /example */>}}
+
+// <div class="example">example</div>
+```
+
+Example:
+
+<div class="example">
+  <div class="example"> example </div>
+</div>
+
+<hr>
+
+</section>

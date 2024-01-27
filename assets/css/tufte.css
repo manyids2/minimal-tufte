@@ -1,33 +1,54 @@
 @charset "UTF-8";
 
-/* Import ET Book styles
-   adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
+/* Color schemes */
+:root {
+  --color-background: #fffff8;
+  --color-foreground: #111111;
+  --color-muted-background: #f8f8f8;
+  --color-muted-foreground: #111111;
 
-/* Tufte CSS styles */
+  --font-heavy: 800;
+  --font-medium: 600;
+  --font-regular: 400;
+  --font-light: 200;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #151515;
+    --color-foreground: #dddddd;
+    --color-muted-background: #252525;
+    --color-muted-foreground: #111111;
+  }
+}
+
+/* Typography */
 html {
   font-size: 15px;
 }
 
+/* Modified body */
 body {
   width: 100%;
-  background-color: #fffff8;
-  color: #111;
   margin: 0;
   padding: 0;
   border: 0;
+  color: var(--color-foreground);
+  background-color: var(--color-background);
 }
 
+/* Main navbar (top) */
 body > nav {
   font-size: 1.5rem;
   font-family: Jost;
-  font-weight: 400;
+  font-weight: var(--font-regular);
   margin-left: auto;
   margin-right: auto;
   padding: 0.5rem;
 }
 
 .nav-title {
-  font-weight: 800;
+  font-weight: var(--font-heavy);
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -57,6 +78,7 @@ body > nav {
   margin-right: 0.5rem;
 }
 
+/* Actual body */
 article {
   position: relative;
   width: 87.5%;
@@ -69,6 +91,7 @@ article {
   counter-reset: sidenote-counter;
 }
 
+/* Table of contents */
 .aside-container {
   width: 87.5%;
   display: flex;
@@ -86,7 +109,7 @@ aside {
   top: 5rem;
   right: 1rem;
   width: 25%;
-  background-color: #fffff8;
+  background-color: var(--color-background);
 }
 
 aside > details {
@@ -94,11 +117,11 @@ aside > details {
   margin-top: 0;
   margin-left: 0.5%;
   border-radius: 1rem;
-  border: 0.25rem solid #f8f8f8;
+  border: 0.25rem solid var(--color-muted-background);
 }
 
 .table-of-contents {
-  border: 0.25rem solid #f8f8f8;
+  border: 0.25rem solid var(--color-muted-background);
   border-radius: 1rem;
 }
 
@@ -130,37 +153,18 @@ summary {
   text-shadow: unset;
 }
 
+/* Example */
 .example {
-  border: 1px solid #f8f8f8;
+  border: 1px solid var(--color-muted-background);
   border-radius: 0.25rem;
   width: 45%;
   margin: 1rem;
   padding: 1rem;
 }
 
-/* Adds dark mode */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #151515;
-    color: #ddd;
-  }
-  aside {
-    background-color: #151515;
-    color: #ddd;
-  }
-  aside > details {
-    border: 0.25rem solid #252525;
-  }
-  .table-of-contents {
-    border: 0.25rem solid #252525;
-  }
-  .example {
-    border: 1px solid #252525;
-  }
-}
-
+/* Headers */
 h1 {
-  font-weight: 400;
+  font-weight: var(--font-regular);
   margin-top: 4rem;
   margin-bottom: 1.5rem;
   font-size: 3.2rem;
@@ -169,7 +173,7 @@ h1 {
 
 h2 {
   font-style: italic;
-  font-weight: 400;
+  font-weight: var(--font-regular);
   margin-top: 2.1rem;
   margin-bottom: 1.4rem;
   font-size: 2.2rem;
@@ -178,13 +182,14 @@ h2 {
 
 h3 {
   font-style: italic;
-  font-weight: 400;
+  font-weight: var(--font-regular);
   font-size: 1.7rem;
   margin-top: 2rem;
   margin-bottom: 1.4rem;
   line-height: 1;
 }
 
+/* Seperator */
 hr {
   display: block;
   height: 1px;
@@ -195,6 +200,7 @@ hr {
   padding: 0;
 }
 
+/* Subtitle */
 p.subtitle {
   font-style: italic;
   margin-top: 1rem;
@@ -204,14 +210,30 @@ p.subtitle {
   line-height: 1;
 }
 
+/* Sidenote numeral */
 .numeral {
   font-family: et-book-roman-old-style;
 }
 
+/* Utilities */
 .danger {
   color: red;
 }
 
+.center {
+  width: 100%;
+  text-align: center;
+}
+
+.jost {
+  font-family: Jost;
+}
+
+.bold {
+  font-weight: var(--font-heavy);
+}
+
+/* Basics */
 section {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -232,7 +254,7 @@ p {
   vertical-align: baseline;
 }
 
-/* Style for the list */
+/* Better lists */
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -280,6 +302,7 @@ div.epigraph > blockquote > footer > cite {
 }
 /* end chapter epigraphs styles */
 
+/* Blockquote */
 blockquote {
   font-size: 1.4rem;
 }
@@ -295,6 +318,7 @@ blockquote footer {
   text-align: right;
 }
 
+/* Children of section */
 section > p,
 section > footer,
 section > table {
@@ -309,11 +333,13 @@ section > ul {
   -webkit-padding-start: 5%;
 }
 
+/* Top margin for first elements */
 dt:not(:first-child),
 li:not(:first-child) {
   margin-top: 0.25rem;
 }
 
+/* Figure */
 figure {
   padding: 0;
   border: 0;
@@ -358,11 +384,11 @@ a:link,
 .hover-tufte-underline:hover {
   text-decoration: none;
   background:
-    -webkit-linear-gradient(#fffff8, #fffff8),
-    -webkit-linear-gradient(#fffff8, #fffff8),
+    -webkit-linear-gradient(var(--color-background), var(--color-background)),
+    -webkit-linear-gradient(var(--color-background), var(--color-background)),
     -webkit-linear-gradient(currentColor, currentColor);
-  background: linear-gradient(#fffff8, #fffff8),
-    linear-gradient(#fffff8, #fffff8),
+  background: linear-gradient(var(--color-background), var(--color-background)),
+    linear-gradient(var(--color-background), var(--color-background)),
     linear-gradient(currentColor, currentColor);
   -webkit-background-size:
     0.05em 1px,
@@ -378,18 +404,18 @@ a:link,
     1px 1px;
   background-repeat: no-repeat, no-repeat, repeat-x;
   text-shadow:
-    0.03em 0 #fffff8,
-    -0.03em 0 #fffff8,
-    0 0.03em #fffff8,
-    0 -0.03em #fffff8,
-    0.06em 0 #fffff8,
-    -0.06em 0 #fffff8,
-    0.09em 0 #fffff8,
-    -0.09em 0 #fffff8,
-    0.12em 0 #fffff8,
-    -0.12em 0 #fffff8,
-    0.15em 0 #fffff8,
-    -0.15em 0 #fffff8;
+    0.03em 0 var(--color-background),
+    -0.03em 0 var(--color-background),
+    0 0.03em var(--color-background),
+    0 -0.03em var(--color-background),
+    0.06em 0 var(--color-background),
+    -0.06em 0 var(--color-background),
+    0.09em 0 var(--color-background),
+    -0.09em 0 var(--color-background),
+    0.12em 0 var(--color-background),
+    -0.12em 0 var(--color-background),
+    0.15em 0 var(--color-background),
+    -0.15em 0 var(--color-background);
   background-position:
     0% 93%,
     100% 93%,
@@ -401,27 +427,6 @@ a:link,
   .tufte-underline,
   .hover-tufte-underline:hover {
     background-position-y: 87%, 87%, 87%;
-  }
-}
-
-/* Adds dark mode */
-@media (prefers-color-scheme: dark) {
-  a:link,
-  .tufte-underline,
-  .hover-tufte-underline:hover {
-    text-shadow:
-      0.03em 0 #151515,
-      -0.03em 0 #151515,
-      0 0.03em #151515,
-      0 -0.03em #151515,
-      0.06em 0 #151515,
-      -0.06em 0 #151515,
-      0.09em 0 #151515,
-      -0.09em 0 #151515,
-      0.12em 0 #151515,
-      -0.12em 0 #151515,
-      0.15em 0 #151515,
-      -0.15em 0 #151515;
   }
 }
 
@@ -590,7 +595,7 @@ label.margin-toggle:not(.sidenote-number) {
   }
   body > nav {
     text-align: center;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid var(--color-foreground);
   }
 }
 
@@ -688,17 +693,4 @@ label.margin-toggle:not(.sidenote-number) {
   img {
     width: 100%;
   }
-}
-
-.center {
-  width: 100%;
-  text-align: center;
-}
-
-.jost {
-  font-family: Jost;
-}
-
-.bold {
-  font-weight: 800;
 }

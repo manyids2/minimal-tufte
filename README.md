@@ -2,6 +2,8 @@
 
 Hugo theme with [tufte-css](https://github.com/edwardtufte/tufte-css.git).
 
+![screenshot](./screenshot.png)
+
 ## Features
 
 

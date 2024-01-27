@@ -97,6 +97,11 @@ aside > details {
   border: 0.25rem solid #f8f8f8;
 }
 
+.table-of-contents {
+  border: 0.25rem solid #f8f8f8;
+  border-radius: 1rem;
+}
+
 aside > details > summary {
   list-style-type: "";
 }
@@ -144,6 +149,9 @@ summary {
     color: #ddd;
   }
   aside > details {
+    border: 0.25rem solid #252525;
+  }
+  .table-of-contents {
     border: 0.25rem solid #252525;
   }
   .example {

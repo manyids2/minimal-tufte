@@ -1,8 +1,8 @@
 {{ define "main" }}
   <h1 class="center jost bold"> {{.Title}} </h1>
-  <div class="table-of-contents example">
+  <div class="table-of-contents">
     <h2 class="center jost"> Contents </h2>
-    <ul>
+    <ul class="center">
     {{ range .Pages }}
       <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
     {{ end }}

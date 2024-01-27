@@ -8,9 +8,8 @@ draft: true
 
 <div class="danger bold">
 I dont understand the copy code yet, so for some reason inserts newlines
-everywhere while copying.
+everywhere while copying. Need to properly add the feature.
 </div>
-
 
 Examples of code
 
@@ -44,6 +43,8 @@ ls -R /
 
 ## Long line
 
+How to show the hovering thin scroll bar to indicate something exists?
+
 ```bash
 ls -R / | xargs -I{} echo {} | xargs -I{} echo {} | xargs -I{} echo {} | xargs -I{} echo {}  | xargs -I{} echo {} | xargs -I{} echo {} | xargs -I{} echo {} | xargs -I{} echo {}
 ```
@@ -53,10 +54,6 @@ ls -R / | xargs -I{} echo {} | xargs -I{} echo {} | xargs -I{} echo {} | xargs -
 <section>
 
 ## Few lines
-
-<div class="danger">
-For some reason inserts newlines everywhere while copying.
-</div>
 
 ```bash
 ls -R / | \
@@ -72,10 +69,6 @@ ls -R / | \
 <section>
 
 ## Many lines
-
-<div class="danger">
-For some reason inserts newlines everywhere while copying.
-</div>
 
 ```c
 #include "app.h"

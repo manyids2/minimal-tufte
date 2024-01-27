@@ -1,4 +1,20 @@
 {{ define "main" }}
-  <h1 class="center jost bold"> {{.Title}} </h1>
-  {{ .Content }}
-{{ end }}
+<section class="aside-container">
+  <div class="vertical-container">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{.Title}}</h1>
+  </div>
+  <aside id="sidebar">
+    <details id="sidebar-details" open>
+      <summary>Contents</summary>
+      <div id="TableOfContents">
+        <ul>
+          {{ range .Pages }}
+          <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </details>
+  </aside>
+</section>
+{{ .Content }} {{ end }}

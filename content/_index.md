@@ -4,6 +4,8 @@ date: 2023-01-01T08:00:00-07:00
 draft: false
 ---
 
+<section>
+
 Hugo theme with [tufte-css](https://github.com/edwardtufte/tufte-css.git).
 
 {{< example >}}
@@ -16,9 +18,11 @@ Screenshot of this theme.
 
 {{< /example >}}
 
+<hr>
+</section>
+<section>
 
 ## Features
-
 
 ### Navbar
 
@@ -27,7 +31,6 @@ Screenshot of this theme.
 ### Table of contents
 
 - right top
-
 
 ### Shortcodes
 
@@ -45,6 +48,9 @@ Screenshot of this theme.
 
 - list pages have links to children by default.
 
+<hr>
+</section>
+<section>
 
 ## Installation
 
@@ -111,7 +117,15 @@ weight = 30
 hugo server -D
 ```
 
+<hr>
+</section>
+<section>
+
 ## Configuration
+
+<hr>
+</section>
+<section>
 
 ## Todos
 
@@ -134,3 +148,4 @@ hugo server -D
 4. Navbar design can be cleaned up
 5. Render entire thing as grid rather than use margin-auto
 6. Extract sass from `tufte.css`
+7. Copy code

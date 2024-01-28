@@ -543,6 +543,38 @@ span.line {
   padding-bottom: 1rem;
 }
 
+.codeblock {
+  position: relative;
+}
+
+.codeblock-button-wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.6;
+  background-color: var(--color-background);
+}
+
+.copy-cmd {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-background);
+  border: none;
+}
+
+.copy-cmd > svg {
+  fill: var(--color-foreground);
+}
+
+.copied {
+  border-bottom: 0.25rem solid red;
+}
+
+.codeblock:hover .codeblock-button-wrapper {
+  display: block;
+}
+
 code,
 pre > code {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;

@@ -65,4 +65,3 @@ unsafe = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
-

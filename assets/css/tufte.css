@@ -4,8 +4,9 @@
 :root {
   --color-background: #fffff8;
   --color-foreground: #111111;
-  --color-muted-background: #f8f8f8;
+  --color-muted-background: #eeeee8;
   --color-muted-foreground: #111111;
+  --color-alert: #dd5555;
 
   --font-heavy: 800;
   --font-medium: 600;
@@ -18,7 +19,8 @@
     --color-background: #151515;
     --color-foreground: #dddddd;
     --color-muted-background: #252525;
-    --color-muted-foreground: #111111;
+    --color-muted-foreground: #bbbbbb;
+    --color-alert: #bb5555;
   }
 }
 
@@ -35,6 +37,13 @@ body {
   border: 0;
   color: var(--color-foreground);
   background-color: var(--color-background);
+}
+
+.footer {
+  width: 87.5%;
+  border-top: 0.25rem solid var(--color-alert);
+  margin: auto;
+  padding-bottom: 4rem;
 }
 
 /* Main navbar (top) */
@@ -216,7 +225,7 @@ hr {
   height: 1px;
   width: 70%;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 0.25rem solid var(--color-muted-background);
   margin: 1em 0;
   padding: 0;
 }
@@ -238,7 +247,7 @@ p.subtitle {
 
 /* Utilities */
 .danger {
-  color: red;
+  color: var(--color-alert);
 }
 
 .center {
@@ -544,6 +553,7 @@ span.line {
 }
 
 .codeblock {
+  border: 1px solid var(--color-muted-background);
   position: relative;
 }
 
@@ -568,7 +578,7 @@ span.line {
 }
 
 .copied {
-  border-bottom: 0.25rem solid red;
+  border-bottom: 0.25rem solid var(--color-alert);
 }
 
 .codeblock:hover .codeblock-button-wrapper {

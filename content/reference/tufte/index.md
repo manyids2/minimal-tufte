@@ -4,7 +4,7 @@ date: 2023-01-01T08:00:00-07:00
 draft: false
 ---
 
-{{< subtitle "Dave Liepman" >}}
+{{< subtitle >}}Dave Liepman{{< /subtitle >}}
 
 Tufte CSS provides tools to style web articles using the ideas
 demonstrated by Edward Tufte's books and handouts. Tufte's style is

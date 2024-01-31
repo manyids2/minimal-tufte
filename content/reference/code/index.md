@@ -4,12 +4,7 @@ date: 2024-01-27T20:01:21+01:00
 draft: true
 ---
 
-<div class="danger bold">
-I dont understand the copy code yet, so for some reason inserts newlines
-everywhere while copying. Need to properly add the feature.
-</div>
-
-Examples of code
+Examples of codeblocks. Hover over to reveal copy button.
 
 <hr>
 

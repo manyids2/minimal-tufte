@@ -6,4 +6,7 @@ tags: ["reference"]
 categories: ["reference"]
 ---
 
-Study of different markdown styles.
+{{< subtitle >}} Implementation and usage. {{< /subtitle >}}
+
+Guided by the principle of **data-ink**, uses minimal colors and elements.
+Since the set is limited, it can be listed and documented exhaustively.

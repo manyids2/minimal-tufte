@@ -2,8 +2,8 @@
 title: "Shortcodes"
 date: 2024-01-27T00:06:30+01:00
 draft: true
-tags: ["shortcodes"]
-categories: ["reference", "shortcodes"]
+tags: ["shortcodes", "reference"]
+categories: ["reference"]
 ---
 
 <hr>
@@ -13,9 +13,9 @@ categories: ["reference", "shortcodes"]
 Code:
 
 ```go
-{{</* subtitle "Subtitle" */>}}
+{{</* subtitle */>}}Subtitle{{</* /subtitle */>}}
 
-// <p class="subtitle">{{ .Get 0 }}</p>
+// <p class="subtitle">{{ .Inner | markdownify }}</p>
 ```
 
 Example:
@@ -201,26 +201,6 @@ Example:
 
 ## iframe
 
-Code:
-
-```go
-{{</* subtitle "Subtitle" */>}}
-
-// <p class="subtitle">{{ .Get 0 }}</p>
-```
-
-Example:
-
-<div class="example">
-  <p class="subtitle">Subtitle</p>
-</div>
-
-Parameters:
-
-| key   | value                   | doc                |
-| :---- | :---------------------- | :----------------- |
-| align | left \| right \| center | align the subtitle |
-
 <hr>
 
 ## footer
@@ -256,5 +236,3 @@ Example:
 <div class="example">
   <div class="example"> example </div>
 </div>
-
-<hr>

@@ -4,6 +4,7 @@
     {{ partial "breadcrumbs.html" . }}
     <h1>{{.Title}}</h1>
   </div>
+  {{- if not .Params.notoc }}
   <aside id="sidebar">
     <details id="sidebar-details" open>
       <summary>Contents</summary>
@@ -16,6 +17,7 @@
       </div>
     </details>
   </aside>
+  {{- end }}
 </section>
 {{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }} {{
 end }}

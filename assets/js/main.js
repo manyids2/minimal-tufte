@@ -67,7 +67,7 @@ function copyText(event) {
   btn.classList.add("copied");
   setTimeout(function() {
     btn.classList.remove("copied");
-  }, 2000);
+  }, 1000);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
